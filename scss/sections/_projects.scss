@@ -1,0 +1,52 @@
+.projects
+{
+	padding-top:100px;
+	padding-bottom:100px;
+	.projects1
+	{
+		margin-top: 80px;	
+		.image 
+		{
+			position: relative;
+			margin: 0;
+			padding:0;
+			overflow: hidden;
+			margin-bottom: 30px;
+			img 
+			{
+				height: 200px;
+				width: 100%;
+				@include transition($time:1s);
+				@media #{$maxmobile}
+				{
+					height: 250px;
+				}
+			}
+			&:hover 
+			{
+				img
+				{
+					@include scale(1.1);
+				}
+				.img-hover
+				{
+					opacity: 0.8;
+					
+				}
+			}
+			.img-hover
+			{
+				position: absolute;
+				top: 0;
+				height: 100%;
+				width: 100%;
+				padding: 25%;
+				background-color:$main;
+				opacity: 0;
+				color: $white;
+				@include transition();
+			}
+		}
+	}
+
+}

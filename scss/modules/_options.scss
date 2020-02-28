@@ -1,0 +1,56 @@
+.options
+{
+	.dropdown
+	{
+		position: fixed;
+		top:300px;
+		left: 0; 
+		z-index: 99999;
+		.dropdown-menu
+		{
+			padding: 20px;
+			.red
+			{
+				background-color:$courage1 !important;		
+			}
+			.aqua
+			{
+				background-color:$courage2 !important;
+			}
+			.yellow
+			{
+				background-color:$courage !important;
+			}
+			.pink
+			{
+				background-color:$courage3 !important;
+			}
+			li 
+			{
+				display: inline-block;
+				height: 30px;
+				width: 30px;
+				margin: 0 auto;
+				cursor: pointer;
+			}
+		}
+	}
+	.btn-primary
+	{
+		background-color:$courage !important;
+		border:0;
+		border-radius: 0;
+		height:50px;
+		width: 50px;
+		line-height: 40px;
+		text-align: center;
+		@include transition();
+		&:hover,&:focus 
+		{
+			background: darken($courage,10%) !important;
+			outline: none;
+			box-shadow: none;
+
+		}
+	}
+}

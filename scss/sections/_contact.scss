@@ -1,0 +1,46 @@
+.contact 
+{
+	padding: 100px 0px;
+	.contact1
+	{
+		margin-top: 80px;
+		.form-horizontal
+		{
+			max-width: 650px;
+			margin: 0 auto;
+			.form-group
+			{
+				.form-control 
+				{
+					border: 0;
+					outline: none;
+					border-radius: 0;
+					box-shadow: 0;
+					background: transparent;
+					padding: 30px 20px;
+					border-bottom:2px solid $courage;
+					margin-bottom: 20px;
+					background-color:$gray1;
+					&:hover,&:focus
+					{	
+						outline: none;
+						box-shadow: none;
+					}
+				}
+			}
+			.button 
+			{
+				.btn-danger
+				{
+					@include transition();
+					@include btn($courage,$courage,10px,20px,$white);
+					&:hover
+					{
+						background-color:transparent;
+						color: $courage;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,55 @@
+.contact1
+{
+	padding: 100px 0px;
+
+	.icon
+	{
+		height: 80px;
+		width: 80px;
+		border-radius: 5px;
+		background: $courage;
+		text-align: center;
+		margin: 0 auto;
+		margin-bottom: 20px;
+		margin-top: 20px;
+		i
+		{
+			color: $white;
+			font-size: 1.5em;
+			line-height: 80px;
+		}
+	}
+	p
+	{
+		color: $main;
+		line-height: 30px;
+		font-size: 18px;
+		margin-bottom: 30px;
+	}
+}
+.btn-primary
+{
+  height: 50px;
+  width: 100px;
+  border-radius: 5px;
+  color: $white;
+  background-color:  $courage;
+  border: 1px solid transparent;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  float: left;
+  font-size: 1.3em;
+  &:hover
+  {
+    color:  #e8a507;
+    background: whitesmoke;
+    border: 1px solid $courage;
+    box-shadow: 0 0 38px rgba(81,107,117,.21);
+  }
+}
+.contact-form
+{
+	padding: 100px 0px;
+	
+
+}

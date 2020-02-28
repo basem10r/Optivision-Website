@@ -1,0 +1,73 @@
+.thumbnail
+{
+  padding: 0;
+  border: 0;
+  margin-bottom: 50px;
+  position: relative;
+  .sale
+  {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: $courage;
+    padding: 5px;
+    border-radius: 3px;
+    color: $white;
+  }
+  @include shadow(0px,0px,50px,-20px,$black);
+  img
+  {
+    height:170px;
+    width: 100%;
+  }
+
+  .caption
+  {
+    padding: 10px 20px 0px 20px;
+  }
+  .button
+  {
+    .arrow
+    {
+      @include shadow(0px,10px,50px,-10px,rgba($black,0.5));
+      height: 40px;
+      width: 40px;
+      line-height: 40px;
+      font-size: 1.5em;
+      border: 0;
+      border-radius: 50%;
+      position: relative;
+      top: 20px;
+      margin: 0 auto;
+      color: $white;
+      background-color:$courage;
+      @include transition();
+      &:hover
+      {
+        background-color:darken($courage,10%);
+      }
+
+    }
+  }
+  .button1
+  {
+    padding-bottom: 20px;
+    .btn-danger
+    {
+      color: $courage;
+      background-color: transparent;
+      border:0;
+      padding-right: 20px;;
+      font-size: 1.3em;
+      i
+      {
+        margin-right: 10px;
+      }
+    }
+  }
+  &.right
+  {
+    text-align: right;
+  }
+
+}

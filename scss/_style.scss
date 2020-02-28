@@ -1,0 +1,127 @@
+/*
+
+@import
+$varcs
+@mixin & @include
+
+@extend
+
+grouping
+
+*/
+
+// @import "_general";
+// @import "_animations";
+// @import "modules/_modules";
+// @import "pages/_pages";
+// @import "partials/_partials";
+// @import "sections/_sections";
+//
+
+
+
+
+
+
+
+
+
+
+
+// slider section
+.carousel-inner
+{
+
+	.item
+	{
+		.content
+		{
+			background-color: $main;
+			width: 100%;
+			height: 100%;
+			opacity: 0.85;
+			position: absolute;
+		}
+		img
+		{
+			background-position: 50% 50%;
+			background-size: cover;
+			width: 100%;
+			height: 600px;
+			@media #{$maxmobile}
+			{
+				height: 600px;
+			}
+		}
+		.carousel-caption
+		{
+			top: 0;
+			margin-top: 100px;
+			h1
+			{
+				margin-bottom: 30px;
+				@media #{$minmobile}
+				{
+					font-size: 4em;
+				}
+				font-weight: 600;
+			}
+			.btn
+			{
+				margin-top: 20px;
+				margin-right: 10px;
+				margin-left: 10px;
+			}
+			.btn-success
+			{
+				@include btn($courage,$courage,10px,30px,$white);
+				&:hover,&:focus
+				{
+					outline: none;
+					box-shadow: none;
+					background-color: darken($courage,10%);
+					@include transition();
+					border-color:darken($courage,10%);
+				}
+			}
+			.btn-danger
+			{
+				@include btn($white,transparent,10px,30px,$white);
+				&:hover,&:focus
+				{
+					outline: none;
+					box-shadow: none;
+					border: 2px solid $courage;
+					color: $courage;
+					@include transition();
+				}
+			}
+		}
+	}
+}
+
+.carousel-control
+{
+	span
+	{
+		margin-top: 200px;
+		font-size: 2em;
+	}
+}
+
+.carousel-indicators
+{
+	bottom: 70px;
+	li
+	{
+		width: 14px;
+		height: 14px;
+	}
+	.active
+	{
+		width: 16px;
+		height: 16px;
+		background: $courage;
+		border-color: $courage;
+	}
+}

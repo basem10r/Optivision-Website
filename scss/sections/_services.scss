@@ -1,0 +1,29 @@
+.services
+{
+	padding:100px 0px;
+	.owl-carousel
+	{
+		margin-top: 50px;
+	}
+	h1
+	{
+
+	}
+	p
+	{
+		color: $gray;
+	}
+	.item
+	{
+		margin-bottom: 70px;
+		.btn-success
+		{
+			@include btn($courage,$courage,5px,10px,$white);
+			font-size: 0.9em;
+		}
+	}
+	.btn-danger
+	{
+		@include btn($courage,$courage,10px,20px,$white);
+	}
+}

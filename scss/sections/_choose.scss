@@ -1,0 +1,53 @@
+.choose 
+{
+	background: $gray1;
+	padding: 100px 0px;
+	.choose1
+	{
+		margin-top: 50px;
+		.desc
+		{
+			font-size: 1.3em;
+			line-height: 30px;
+			vertical-align: middle;
+			margin-top: 30px;
+		}
+		.cards
+		{
+			padding-top:20px;
+			padding-bottom:10px;
+			padding-#{$directionReverse}:30px;
+			.card 
+			{
+				margin-bottom: 20px;
+				display: block;
+				.icon,.desc1
+				{
+					display: inline-block;
+				}
+				.desc1
+				{
+					margin-#{$direction}:20px;
+				}
+				.icon
+				{
+					background-color:$courage;
+					height: 60px;
+					width: 60px;
+					line-height: 60px;
+					border-radius: 50%;
+					color: $white;
+					text-align: center;
+					margin-#{$direction}:20px;
+					i 
+					{
+						font-size: 1.3em;
+					}
+					
+				}
+				
+			}
+		}
+	}
+
+}

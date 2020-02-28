@@ -1,0 +1,55 @@
+$main:#16233E;
+$main1:#121E37;
+$courage:#E8A507;
+$yellow:#E8A507;
+$gray:#AD9D93;
+$gray1:#F5F5F5;
+$gray2:#212121;
+$black:#000000;
+$white:#ffffff;
+$courage1:red; //red
+$courage3:#FF497C; //pink
+$green:#A0CE4E;
+$orange:#F1894C;
+$courage2:aqua; //aqua
+
+//========== Global Variables ==========//
+
+$page-dir:rtl;
+$page-dir-reverse:ltr;
+$direction:right;
+$directionReverse:left;
+
+/*******************************
+********responsive design*******/
+$minMobile:"(min-width: 320px)";
+$maxMobile:"(max-width: 481px)";
+$minmobile:"(min-width: 767px)";
+$maxmobile:"(max-width: 768px)";
+$maxSmall:"(max-width: 991px)";
+$minSmall:"(min-width: 767px)";
+$minMedium:"(min-width: 992px)";
+$minLarge:"(min-width: 1200px)";
+$maxLarge:"(max-width: 1300px)";
+
+//========== fonts ==========//
+
+@font-face
+{
+    font-family: "Droid Arabic Kufi";
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Droid-Arabic-Kufi.ttf.eot') format('eot');
+}
+.owl-carousel
+{
+  direction: $page-dir-reverse;
+}
+
+@import "_general";
+@import "_animations";
+@import "modules/_modules";
+@import "pages/_pages";
+@import "partials/_partials";
+@import "sections/_sections";
+@import '_style.scss';

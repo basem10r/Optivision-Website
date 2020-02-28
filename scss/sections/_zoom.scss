@@ -1,0 +1,15 @@
+.magni
+{
+	position: relative;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	img
+	{
+		width: 100%;
+		height:500px;
+	}
+	.blur
+	{
+		filter:blur(3px);
+	}
+}

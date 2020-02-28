@@ -1,0 +1,63 @@
+.blogs
+{
+	padding: 100px 0px;
+	background-color:$gray1;
+	.container
+	{
+		margin-top: 80px;
+	}
+	.thumbnail
+	{
+		padding: 0;
+		background: $white;
+		margin-bottom: 50px;
+		border: 0;
+		.caption
+		{
+			padding:20px;
+			.tags
+			{
+				margin-top: 20px;
+				margin-bottom: 20px;
+				.icon,.tags1
+				{
+					display: inline-block;
+				}
+				.icon
+				{
+					margin-left: 10px;
+					i
+					{
+						color: $courage;
+					}
+				}
+				.tags1
+				{
+					a
+					{
+						text-decoration: none;
+						color: $gray;
+						@include transition();
+						&:hover
+						{
+							color: $gray2;
+						}
+					}
+				}
+			}
+			p
+			{
+				color: $gray;
+			}
+			a i
+			{
+				@include transition();
+			}
+			.btn-danger
+			{
+				padding-right: 0;
+			}
+		}
+
+	}
+}

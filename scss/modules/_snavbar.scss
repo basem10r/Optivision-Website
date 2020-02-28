@@ -1,0 +1,82 @@
+.header
+{
+	margin-top: 0;
+	height:700px;
+}
+.navbar-inverse
+{
+	margin-top: 0;
+	margin-bottom: 0;
+	border:0;
+	background-color: $white;
+	border-radius: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	.container
+	{
+		position: relative;
+	}
+	.navbar-brand
+	{
+		color: $courage;
+		position: relative;
+		bottom: 25px;
+		@media #{$minmobile}
+		{
+			#{$direction}:0;
+			top: -20px;
+			position: absolute;
+		}
+		letter-spacing: 4px;
+		span
+		{
+			color: $courage;
+		}
+	}
+	.navbar-toggle
+	{
+		background-color: $main;
+		border: 1px solid $main;
+		.icon-bar
+		{
+			background: $white;
+		}
+		&:hover,&:focus
+		{
+			background-color: $main;
+			outline: none;
+			box-shadow: none;
+		}
+	}
+	.navbar-nav > li > a
+	{
+		color: $main;
+		font-size: 16px;
+		font-weight: 700;
+		@include transition();
+		&:hover
+		{
+			color:$courage;
+		}
+	}
+	.navbar-nav > .active > a,.navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus
+	{
+		background: transparent;
+		margin-right: 10px;
+		border-radius: 15px;
+		color: $courage;
+		
+	}
+	.navbar-nav > .open > a, .navbar-nav > .open > a:hover,.navbar-nav > .open > a:focus
+	{
+		background: none;
+	}
+	.affix
+	{
+		background-color: #212121;
+		width: 100%;
+		height: 1.3em;
+		z-index: 6;
+		border:none;
+	}
+}

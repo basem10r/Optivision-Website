@@ -1,0 +1,53 @@
+
+.follow
+{
+	padding-top: 50px;
+	padding-bottom: 10px;
+	background-color: $main;
+	h1
+	{
+		color: $white;
+	}
+}
+
+.follow .icon5
+{
+	margin: 50px 90px;
+}
+
+.follow .icon5 .icon
+{
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	margin-bottom: 20px;
+	line-height: 45px;
+	font-size: 1.5em;
+	border: 2px solid $white;
+	color: $white;
+	cursor: pointer;
+	@include transition;
+	&:hover
+	{
+		background-color: $white;
+		color:$main;
+	}
+}
+.follow hr 
+{
+	border:0.5px solid $courage;
+}
+
+.follow .text
+{
+	color: $white;
+	margin-top: 50px;
+}
+.follow .text p span
+{
+	color :$courage;
+	font-weight: bold;	
+}
+
+ 

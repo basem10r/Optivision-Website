@@ -1,0 +1,72 @@
+
+.nav1
+{
+	background-color: $main;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	color: $white;
+	margin-bottom: 0;
+	@media #{$maxmobile}
+	{
+		display: none;
+	}
+	.left
+	{
+		display: inline-block;
+		.card
+		{
+			display: inline-block;
+
+			.icon,.detail
+			{
+				display: inline-block;
+			}
+			.icon
+			{
+				i 
+				{
+					font-size: 1.2em;
+				}
+			}
+			.detail
+			{
+				margin-left:10px; 
+			}
+		}
+		.card:nth-child(2)
+		{
+			margin-left: 30px;
+		}
+	}
+	.right
+	{
+		display: inline-block;
+		.icons
+		{
+			.square
+			{
+				display: inline-block;
+				background-color: $white;
+				color: $main;
+				height: 30px;
+				width: 30px;
+				text-align: center;
+				border-radius: 50%;
+				line-height: 30px;
+				@include transition;
+				a i 
+				{
+					color: $main;
+				}
+				&:hover
+				{
+					background-color: darken($white,10%);
+					a i 
+					{
+						color: $main;
+					}
+				}
+			}
+		}
+	}
+}

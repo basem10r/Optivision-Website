@@ -1,0 +1,8 @@
+@mixin btn($val,$val1,$val2,$val3,$val4)
+{
+  border:2px solid $val;
+  background-color: $val1;
+  padding:$val2 $val3;
+  color:$val4;
+  border-radius: 25px;
+}

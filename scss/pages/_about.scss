@@ -1,0 +1,130 @@
+.aboutus
+{
+	padding-top:100px;
+	.frame 
+	{
+		overflow: hidden;
+		height: 220px;
+		img 
+		{
+			height: 280px;
+		}
+	}
+	.card 
+	{
+		margin-bottom: 20px;
+		&:hover
+		{
+			img
+			{
+			    transform: scale(1.1);
+			}
+		}
+	}
+	.content 
+	{
+		margin-top: 50px;
+		p 
+		{
+			color: $gray;
+		}
+	}
+	padding-bottom:100px;
+	img 
+	{
+		@include transition($time:0.8s);
+	}
+	
+	h2
+	{
+		font-size: 20px;
+	    font-weight: 700;
+	}
+}
+
+
+
+// start section FAQ's 
+// ************************
+
+.faq
+{
+	padding-top:100px;
+	padding-bottom:100px;
+	.content
+	{
+		margin-top: 50px;
+	}
+	.accordion 
+	{
+		dt 
+		{
+			padding: 20px;
+			background-color:$gray1;
+			margin-bottom: 10px;
+			cursor: pointer;
+		}
+		dd 
+		{
+			margin: 0;
+			padding: 0px 10px 20px 10px !important;
+			color: $gray;
+		}
+	}
+	.content 
+	{
+		margin-top: 50px;
+	}
+}
+.faq img
+{
+	height: 350px;
+}
+
+
+.ourteam 
+{
+	padding-top:100px;
+	padding-bottom:100px;
+	.owl-carousel 
+	{
+		margin-top: 50px;
+		padding: 0 !important;
+		direction: ltr;
+		.active
+		{
+			background-color:transparent;
+		}
+	}
+	.item 
+	{
+		background-color:$white;
+		@include shadow(0px,19px,35px,0px,rgba($black, 0.1));
+		margin-bottom: 50px;
+		.card 
+		{
+			.half 
+			{
+				background-color:$gray1;
+				height: 100px;
+				width: 100%;
+			}
+			img 
+			{
+				height: 90px;
+				width: 90px;
+				position: relative;
+				bottom: 40px;
+				border: 3px solid $courage;
+				border-radius:5px;
+				@include shadow(0px,19px,35px,0px,rgba($black, 0.2));
+
+			}
+			.desc
+			{
+				position: relative;
+				bottom: 40px;
+			}
+		}
+	}
+}

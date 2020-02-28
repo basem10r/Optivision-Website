@@ -1,0 +1,33 @@
+.head
+{
+	padding-top:50px;
+	padding-bottom:50px;
+	background: $gray1;
+	.head1 
+	{
+		p 
+		{
+			margin-top: 20px;
+			span 
+			{
+				color: $courage;
+				font-size: 1.5em;
+				margin: 0 10px;
+				font-weight: bold;
+			}
+		}
+		a 
+		{
+			margin-top: 100px;
+			text-decoration: none;
+			color: $gray;
+			font-size: 1.5em;
+
+		}
+	}
+}
+
+.head2
+{
+	padding-bottom:200px;
+}

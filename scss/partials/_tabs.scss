@@ -1,0 +1,30 @@
+.nav-tabs
+{
+  position: relative;
+  margin: 50px 0px;;
+  border:0;
+
+  li
+  {
+    float: none;
+    display: inline-block;
+  }
+  li.active a
+  {
+    color: $main;
+    text-decoration: none;
+    border:0;
+    border-bottom: 2px solid $courage;
+    &:hover,&:focus
+    {
+      border: none;
+      border-bottom: 2px solid $courage;
+      color: $main;
+    }
+  }
+  li a
+  {
+    color: $main;
+    text-decoration: none;
+  }
+}
